@@ -13,9 +13,9 @@ app.use(function(req, res, next) {
   });
 
 app.use(express.json());
-/*app.get('/', (req, res) =>{
+app.get('/', (req, res) =>{
     res.send('Hi');
-});*/
+});
 
 app.use("/todos", routerTasks);
 module.exports = app;
