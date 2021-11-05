@@ -6,7 +6,7 @@ const app = express();
 connectionDB();
 //settings
 
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT);
 app.use(function(req, res, next) {
     res.setTimeout(25000);
     next();
