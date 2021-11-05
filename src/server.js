@@ -7,6 +7,10 @@ connectionDB();
 //settings
 
 app.set("port", process.env.port || 3000);
+app.use(function(req, res, next) {
+    res.setTimeout(1000);
+    next();
+  });
 
 app.use(express.json());
 /*app.get('/', (req, res) =>{
