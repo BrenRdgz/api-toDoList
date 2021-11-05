@@ -8,7 +8,7 @@ connectionDB();
 
 app.set("port", process.env.PORT || 3000);
 app.use(function(req, res, next) {
-    res.setTimeout(1000);
+    res.setTimeout(25000);
     next();
   });
 
